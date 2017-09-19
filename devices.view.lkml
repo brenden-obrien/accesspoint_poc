@@ -17,7 +17,7 @@ view: devices {
 
   dimension: zone {
     type: string
-    sql: ${TABLE}.location ;;
+    sql: ${TABLE}.zone ;;
   }
 
   dimension: mac {
