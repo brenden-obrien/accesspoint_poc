@@ -15,7 +15,7 @@ view: devices {
     sql: ${TABLE}.date_time ;;
   }
 
-  dimension: location {
+  dimension: zone {
     type: string
     sql: ${TABLE}.location ;;
   }
@@ -23,6 +23,16 @@ view: devices {
   dimension: mac {
     type: string
     sql: ${TABLE}.mac ;;
+  }
+
+  dimension: coordinates {
+    type: string
+    sql: ${TABLE}.coordinates ;;
+  }
+
+  dimension: floor_number{
+    type: number
+    sql: ${TABLE}.floor_number ;;
   }
 
   measure: count {
