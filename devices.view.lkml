@@ -26,7 +26,7 @@ view: devices {
   }
 
   dimension: coordinates {
-    type: string
+    type: number
     sql: ${TABLE}.coordinates ;;
   }
 
