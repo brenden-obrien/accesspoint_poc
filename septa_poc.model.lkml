@@ -7,4 +7,9 @@ include: "*.view"
 include: "*.dashboard"
 
 explore: devices {}
-explore: subscribers {}
+explore: subscribers {
+  join: devices {
+    sql_on: ${subscribers.mac} = ${devices.mac} ;;
+    relationship: many_to_one
+  }
+}
