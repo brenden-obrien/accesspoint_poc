@@ -1,5 +1,5 @@
 view: subscribers {
-  sql_table_name: accesspoint.subscribers ;;
+  sql_table_name: accesspoint.users ;;
 
   dimension: email {
     type: string
